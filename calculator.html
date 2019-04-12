@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Página web</title>
+<script> 
+function calcula(operacion){ 
+   	var operando1 = document.calc.operando1.value 
+   	var operando2 = document.calc.operando2.value 
+   	var result = eval(operando1 + operacion + operando2) 
+   	document.calc.resultado.value = result 
+} 
+</script>
+</head>
+<body>
+<form name="calc"> 
+<input type="Text" name="operando1" value="0" size="12"> 
+<br> 
+<input type="Text" name="operando2" value="0" size="12"> 
+<br> 
+<input type="Button" name="" value=" x " onclick="calcula('*')"> 
+
+<br> 
+<input type="Text" name="resultado" value="0" size="12"> 
+</form>
+</body>
+</hmtl>
